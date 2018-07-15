@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "lunr-chinese": "^1.2.0"
+  }
+}
