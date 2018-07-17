@@ -29,5 +29,6 @@ hugo 的安装方法可以参见[官方的文档](https://gohugo.io/getting-star
 
 * http://www.linfuyan.com/add-chinese-support-to-lunrjs/
 * https://github.com/MihaiValentin/lunr-languages
+
 {{% /notice %}}
 
