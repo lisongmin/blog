@@ -19,16 +19,12 @@ hugo 的安装方法可以参见[官方的文档](https://gohugo.io/getting-star
 这个主题的主要亮点:
 
 1. 支持搜索
+    {{% notice note %}}
+中文搜索目前支持的不是很好，主要支持英文搜索。后续需要寻找解决方案，见[任务列表]({{< ref "basics/tasks.md" >}})。
+{{% /notice %}}
+
 1. 支持[Mermaid](https://mermaidjs.github.io/)，可以通过文本方式支持流程图，顺序图，甘特图
 1. 支持收缩扩展
 1. 支持告警，提示框
 
-
-{{% notice note %}}
-中文搜索目前支持的不是很好，主要支持英文搜索。后续需要寻找解决方案。
-
-* http://www.linfuyan.com/add-chinese-support-to-lunrjs/
-* https://github.com/MihaiValentin/lunr-languages
-
-{{% /notice %}}
 
