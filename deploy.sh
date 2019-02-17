@@ -2,9 +2,15 @@
 
 prepare_ssh()
 {
-    (npm bin)/set-up-ssh --key "$encrypted_eab015c51e35_key" \
-                         --iv "$encrypted_eab015c51e35_iv" \
-                         --path-encrypted-key ".travis/bot.enc"
+    openssl aes-256-cbc -K $encrypted_eab015c51e35_key \
+        -iv $encrypted_eab015c51e35_iv \
+      -in .travis/bot.enc -out ./deploy_key -d
+    chmod 600 ./deploy_key
+
+    eval "$(ssh-agent -s)"
+    ssh-add ./deploy_key
+
+    echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 }
 
 deploy() {
