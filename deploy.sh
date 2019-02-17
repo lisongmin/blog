@@ -26,6 +26,5 @@ deploy() {
 }
 
 if [ "$TRAVIS_BRANCH" == "master"  ];then
-    prepare_ssh
-    deploy
+    prepare_ssh && deploy
 fi

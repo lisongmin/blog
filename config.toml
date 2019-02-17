@@ -1,5 +1,5 @@
 # Base URL of the site, the only required config argument
-base_url = "lisongmin.github.io"
+base_url = "https://lisongmin.github.io"
 
 # Used in RSS by default
 title = "雨夜听风小筑"
