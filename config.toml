@@ -1,25 +1,74 @@
-baseURL = "https://blog.qingpin.org/"
-languageCode = "en-us"
-title = "风起青蘋.学无止境"
+# Base URL of the site, the only required config argument
+base_url = "lisongmin.github.io"
 
-# Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+# Used in RSS by default
+title = "雨夜听风小筑"
+description = "我的学习积累"
+# the default language, used in RSS and coming i18n
+default_language = "zh-Hans"
 
-[params]
-# hugo-theme-learn params
-# {
-# Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
-# Useful to give opportunity to people to create merge request for your doc.
-# See the config.toml file from this documentation site to have an example.
-editURL = ""
-# Author of the site, will be used in meta information
-author = "李宋民"
-# Change default color scheme with a variant one. Can be "red", "blue", "green".
-themeVariant = "blue"
-# enable search
-search = true
-# }
+# Theme name to use
+theme = "even"
 
-# For search functionnality
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+# Highlight all code blocks found
+highlight_code = true
+
+# Which theme to use for the code highlighting.
+# See below for list of accepted values
+highlight_theme = "base16-ocean-dark"
+
+# Whether to generate a RSS feed automatically
+generate_rss = true
+
+# The number of articles to include in the RSS feed. Will include all items if
+# not set (the default).
+rss_limit = 50
+
+# The taxonomies to be rendered for that site and their configuration
+taxonomies = [
+    {name = "tags", rss = true},
+    {name = "categories", paginate_by = 5, rss = true}
+]
+
+# Whether to compile the Sass files found in the `sass` directory
+compile_sass = true
+
+# Whether to build a search index out of the pages and section
+# content for the `default_language`
+build_search_index = false
+
+# Go through every links in all content and check if the links are valid
+# If a link is invalid (404, 500, etc), the build will error.
+# Link checking can take a very long time if you have many links so this should
+# only enabled once in a while to catch any dead links.
+check_external_links = false
+
+# A list of glob patterns specifying asset files to ignore when
+# processing the content directory.
+# Defaults to none, which means all asset files are copied over to the public folder.
+# Example:
+#     ignored_content = ["*.{graphml,xlsx}", "temp.*"]
+ignored_content = ["*.dia"]
+
+# A list of directories to search for additional `.sublime-syntax` files in.
+extra_syntaxes = []
+
+# Optional translation object. The key if present should be a language code
+[translations]
+
+# You can put any kind of data in there and it
+# will be accessible in all templates
+[extra]
+
+even_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/about", name = "About"},
+]
+
+even_title = "Even"
+author = "Songmin Li"
+katex_enable = true
+katex_auto_render = true
+disqus = "lisongmin-github-io.disqus.com"
