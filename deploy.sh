@@ -19,5 +19,7 @@ deploy() {
     git push -u origin master --force
 }
 
-prepare_ssh
-deploy
+if [ "$TRAVIS_BRANCH" == "master"  ];then
+    prepare_ssh
+    deploy
+fi
