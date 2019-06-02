@@ -2,4 +2,7 @@
 *.swp
 *.swo
 
+.ccls-cache/
+a.out
+
 /public/
