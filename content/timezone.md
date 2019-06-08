@@ -5,8 +5,8 @@ title = "时区介绍和用法"
 date = 2019-05-26T11:04:00+08:00
 
 [taxonomies]
-tags = ["python", "datetime", "timezone"]
-categories = ["datetime"]
+tags = ["datetime", "timezone"]
+categories = ["python"]
 +++
 
 # 时区介绍

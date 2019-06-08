@@ -4,8 +4,8 @@ title = "boost::circular_buffer 性能对比及用法小结"
 date = 2019-06-02T08:34:00+08:00
 
 [taxonomies]
-tags = ["c++", "circular_buffer"]
-categories = ["container", "memory"]
+tags = ["container", "memory", "circular_buffer", "boost"]
+categories = ["c++", "c++-libs"]
 +++
 
 # boost::circular_buffer 性能对比及用法小结

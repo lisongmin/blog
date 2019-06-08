@@ -4,8 +4,8 @@ title = "我的c++知识速查表"
 date = 2019-06-02T15:15:00+08:00
 
 [taxonomies]
-tags = ["c++"]
-categories = ["cheat sheet"]
+tags = ["cheat sheet"]
+categories = ["c++"]
 +++
 
 # 我的c++知识速查表
