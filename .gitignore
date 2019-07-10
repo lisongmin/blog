@@ -1,6 +1,7 @@
 
 *.swp
 *.swo
+*.dia~
 
 .ccls-cache/
 a.out

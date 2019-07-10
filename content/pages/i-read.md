@@ -35,3 +35,11 @@ template = "about.html"
                                   ... more conditions ...
                                   _InputIterator>::type __last);
         ```
+
+# security
+
+* 2019-07-07 阅读了来自 Rammesh Lingappa 的 [What is session hijacking and how you can stop it](https://www.freecodecamp.org/news/session-hijacking-and-how-to-stop-it-711e3683d1ac/)
+* 2019-07-07 阅读了来自 David Gilbertson [I’m harvesting credit card numbers and passwords from your site. Here’s how](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5)
+    - 介绍了如何通过js注入, npm依赖包等方式窃取用户的信用卡信息的过程，以及如何设计web登录功能来避免这种攻击。
+    独立的登录页面，以及无第三方js库是登录信息不被窃取的保证。
+
