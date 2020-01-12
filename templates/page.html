@@ -1,0 +1,18 @@
+
+{% extends "even/templates/page.html" %}
+
+{% block page_after_footer %}
+{{ super() }}
+<div class="utterances"></div>
+{% endblock page_after_footer %}
+
+{% block js_body %}
+{{ super() }}
+<script src="https://utteranc.es/client.js"
+        repo="lisongmin/lisongmin.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endblock js_body %}
