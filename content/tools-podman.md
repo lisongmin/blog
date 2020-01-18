@@ -50,9 +50,9 @@ $ podman system migrate
 详细的解释：
 
 ```
-    "Rootless  Podman  uses  a  pause process to keep the unprivileged namespaces alive.
-    This prevents any change to the /etc/subuid and /etc/subgid files from being propagated
-    to the rootless containers while the pause process is running.
+Rootless  Podman  uses  a  pause process to keep the unprivileged namespaces alive.
+This prevents any change to the /etc/subuid and /etc/subgid files from being propagated
+to the rootless containers while the pause process is running.
 ```
 
 ## 配置镜像源
@@ -107,3 +107,6 @@ $ ssh -Nfq -D 10800 company.ssh.address
 $ https_proxy=socks5:127.0.0.1:10800 podman pull uri/image
 ```
 
+## 参考
+
+* [containers-registries.conf.5.md](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md)
