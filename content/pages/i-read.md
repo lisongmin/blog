@@ -43,3 +43,8 @@ template = "about.html"
     - 介绍了如何通过js注入, npm依赖包等方式窃取用户的信用卡信息的过程，以及如何设计web登录功能来避免这种攻击。
     独立的登录页面，以及无第三方js库是登录信息不被窃取的保证。
 * 待阅读: [OAuth 2.0](https://ldapwiki.com/wiki/OAuth%202.0)
+
+# python
+
+* 2020-01-23 [sans I/O](https://sans-io.readthedocs.io/)
+    - 理解无io网络协议的优点，开阔视野
