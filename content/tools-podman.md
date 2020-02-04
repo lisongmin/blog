@@ -104,7 +104,7 @@ $ ssh -Nfq -D 10800 company.ssh.address
 2. 通过隧道下载镜像
 
 ```
-$ https_proxy=socks5:127.0.0.1:10800 podman pull uri/image
+$ https_proxy=socks5://127.0.0.1:10800 podman pull uri/image
 ```
 
 ## 参考
