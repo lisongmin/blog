@@ -1,7 +1,7 @@
 
 +++
 title = "基于ssh tunnel建立vpn"
-date = 2019-02-04T23:14:00+08:00
+date = 2020-02-04T23:14:00+08:00
 
 [taxonomies]
 tags = ["badvpn", "ssh", "tunnel", "systemd"]
