@@ -4,7 +4,7 @@ title = "基于ssh tunnel建立vpn"
 date = 2020-02-04T23:14:00+08:00
 
 [taxonomies]
-tags = ["badvpn", "ssh", "tunnel", "systemd"]
+tags = ["badvpn", "ssh", "tunnel", "systemd", "network", "vpn"]
 categories = ["os", "linux", "systemd"]
 +++
 
@@ -118,11 +118,15 @@ Description=ssh tunnel to company
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/ssh -TN -D 10800 user@ssh.server
+ExecStart=/usr/bin/autossh -M 0 -o ServerAliveInterval 45 -o ServerAliveCountMax 2 -TN -D 10800 user@ssh.server
 
 [Install]
 WantedBy=multi-user.target
 ```
+
+这里，如果直接使用ssh，不能在连接中断时，自动重连，所以，一般会使用autossh，这个辅助程序会感知tunnel的状态，
+并在需要时自动重启ssh.
+
 
 ```
 $ cat ~/.config/systemd/user/vpn-to-company.service
@@ -149,3 +153,4 @@ systemctl --user enable vpn-to-company.service
 
 * [vpn over ssh](https://wiki.archlinux.org/index.php/VPN_over_SSH)
 * [badvpn tun2socks](https://github.com/ambrop72/badvpn/wiki/Tun2socks)
+* [autossh on archwiki](https://wiki.archlinux.org/index.php/OpenSSH#Autossh_-_automatically_restarts_SSH_sessions_and_tunnels)
