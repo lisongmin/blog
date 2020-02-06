@@ -118,7 +118,7 @@ Description=ssh tunnel to company
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/autossh -M 0 -o ServerAliveInterval 45 -o ServerAliveCountMax 2 -TN -D 10800 user@ssh.server
+ExecStart=/usr/bin/autossh -M 0 -o ServerAliveInterval=45 -o ServerAliveCountMax=2 -TN -D 10800 user@ssh.server
 
 [Install]
 WantedBy=multi-user.target
