@@ -121,7 +121,7 @@ Type=simple
 ExecStart=/usr/bin/autossh -M 0 -o ServerAliveInterval=45 -o ServerAliveCountMax=2 -TN -D 10800 user@ssh.server
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 ```
 
 这里，如果直接使用ssh，不能在连接中断时，自动重连，所以，一般会使用autossh，这个辅助程序会感知tunnel的状态，
@@ -139,7 +139,7 @@ Type=simple
 ExecStart=/usr/bin/badvpn-tun2socks --tundev sshtun --netif-ipaddr 10.4.199.1 --netif-netmask 255.255.255.0 --socks-server-addr localhost:10800
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 ```
 
 配置完成后，设置为用户登录后自启动
