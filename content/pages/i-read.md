@@ -5,6 +5,11 @@ path = "i-read"
 template = "about.html"
 +++
 
+# linux
+
+* 2020-02-14 阅读了来自 Leo 的[Linux 下的字体调校指南](https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/)
+    - 很简洁高效的 linux 字体配置方案，可以直接拿过来就用的版本。
+
 # c++
 
 * 2019-06-02 阅读了来自 Mark Isaacson 的 [memcpy, memmove, and memset are obsolete!](http://maintainablecode.logdown.com/posts/159916-memcpy-memmove-and-memset-are-deprecated)
