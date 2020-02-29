@@ -13,7 +13,7 @@ categories = ["os", "linux", "systemd"]
 最近这场疫情，导致远程办公成为大部分公司的选择，最简单的远程方式是通过ssh tunnel的动态端口转发方式，构建socks5代理.
 但这种模式需要每个应用都以代理方式运行，不太方便。而badvpn这个软件可以将socks代理转成vpn，从而实现无缝访问公司内网。
 
-这里介绍通过ssh, [badvpn](), systemd-networkd共同构建vpn的方案。
+这里介绍通过ssh, [badvpn](https://github.com/ambrop72/badvpn), systemd-networkd共同构建vpn的方案。
 
 ## 配置TUN网络
 
