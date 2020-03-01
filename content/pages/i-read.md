@@ -7,6 +7,7 @@ template = "about.html"
 
 # linux
 
+* 2020-03-01 阅读了 [libvirt手册中关于自定义NAT网络的部分](https://jamielinux.com/docs/libvirt-networking-handbook/custom-nat-based-network.html)
 * 2020-02-14 阅读了来自 Leo 的[Linux 下的字体调校指南](https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/)
     - 很简洁高效的 linux 字体配置方案，可以直接拿过来就用的版本。
 
