@@ -5,6 +5,15 @@ path = "i-read"
 template = "about.html"
 +++
 
+# k8s
+
+* 2020-04-19 阅读来自 [宋静超](https://jimmysong.io) 的 [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
+* 2020-03-21 阅读了 [Role based access control (RBAC) policies in Kubernetes](https://www.youtube.com/watch?v=CnHTCTP8d48)
+* 2020-03-15 阅读了来自 Grigory Ignatyev 的 [4 ways to bootstrap a Kubernetes cluster](https://medium.com/containerum/4-ways-to-bootstrap-a-kubernetes-cluster-de0d5150a1e4)
+* 2020-03-15 阅读了来自 Kunal Kushwaha 的 [How Container Runtimes matter in Kubernetes](https://events19.linuxfoundation.org/wp-content/uploads/2017/11/How-Container-Runtime-Matters-in-Kubernetes_-OSS-Kunal-Kushwaha.pdf)
+* 2020-03-15 阅读了来自 Antonio Murdaca 的 [container runtimes: clarity](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
+* 2020-03-15 阅读了来自 Alex Pollitt 的 [Comparing kube-proxy modes: iptables or IPVS](https://www.projectcalico.org/comparing-kube-proxy-modes-iptables-or-ipvs/)
+
 # linux
 
 * 2020-03-01 阅读了 [libvirt手册中关于自定义NAT网络的部分](https://jamielinux.com/docs/libvirt-networking-handbook/custom-nat-based-network.html)
@@ -13,6 +22,7 @@ template = "about.html"
 
 # c++
 
+* 2020-04-02 阅读了来自 Sutter’s Mill 的 [GotW #100: Compilation Firewalls](https://herbsutter.com/gotw/_100/)
 * 2019-06-02 阅读了来自 Mark Isaacson 的 [memcpy, memmove, and memset are obsolete!](http://maintainablecode.logdown.com/posts/159916-memcpy-memmove-and-memset-are-deprecated)
 * 2019-06-27 阅读了来自 Eli Bendersky 的 [SFINAE and enable_if](https://eli.thegreenplace.net/2014/sfinae-and-enable_if) 学会了`enable_if`的用法
     - `enable_if`可以用于模板参数中
