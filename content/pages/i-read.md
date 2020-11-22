@@ -16,6 +16,8 @@ template = "about.html"
 
 # linux
 
+* 2020-08-19 阅读了来自 Steven Iveson 的 [Masterclass – Tcpdump – Expressions](https://packetpushers.net/masterclass-tcpdump-expressions/)
+    - 详细介绍了 tcpdump 的用法, 同时了解到 tcpdump 的过滤条件可以通过 `man pcap-filter` 找到，以后使用tcpdump的时候，不再需要google了。
 * 2020-03-01 阅读了 [libvirt手册中关于自定义NAT网络的部分](https://jamielinux.com/docs/libvirt-networking-handbook/custom-nat-based-network.html)
 * 2020-02-14 阅读了来自 Leo 的[Linux 下的字体调校指南](https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/)
     - 很简洁高效的 linux 字体配置方案，可以直接拿过来就用的版本。
@@ -64,3 +66,7 @@ template = "about.html"
 
 * 2020-01-23 [sans I/O](https://sans-io.readthedocs.io/)
     - 理解无io网络协议的优点，开阔视野
+
+# vps
+
+https://www.atrandys.com/

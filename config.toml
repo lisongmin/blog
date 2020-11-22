@@ -31,7 +31,7 @@ taxonomies = [
 ]
 
 # Whether to compile the Sass files found in the `sass` directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index out of the pages and section
 # content for the `default_language`
