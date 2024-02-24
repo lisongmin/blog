@@ -1,6 +1,11 @@
 
 {% extends "even/templates/page.html" %}
 
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ get_url(path="print.css", trailing_slash=false) }}"/>
+{% endblock css %}
+
 {% block page_after_footer %}
 {{ super() }}
 <div class="utterances"></div>

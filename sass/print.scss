@@ -1,0 +1,42 @@
+
+@media print {
+  body {
+    border-top: 0 !important;
+  }
+  #header {
+    display: none !important;
+  }
+  .post__toc {
+    display: none !important;
+  }
+  .post__meta {
+    display: none !important;
+  }
+  main .post__title {
+    font-weight: 500 !important;
+    font-size: 40px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+  main .post__header {
+    border-bottom: 2px solid #c05b4d !important;
+    padding-bottom: 10px !important;
+  }
+
+  table {
+    box-shadow: none !important;
+    thead {
+      background: inherit !important;
+      text-align: left !important;
+    }
+  }
+  tr th, tr td {
+    border: 0px !important;
+  }
+  .post-footer {
+    display: none !important;
+  }
+  .utterances {
+    display: none !important;
+  }
+}
